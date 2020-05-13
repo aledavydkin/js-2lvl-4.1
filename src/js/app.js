@@ -12,5 +12,3 @@ export default function validateNumber(number) {
     return e;
   }
 }
-
-console.log(validateNumber(23));
