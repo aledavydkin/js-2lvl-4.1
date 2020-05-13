@@ -8,4 +8,3 @@ export default function validateNumber(number) {
   }
   return convertNum;
 }
-
