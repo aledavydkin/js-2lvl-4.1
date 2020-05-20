@@ -1,10 +1,8 @@
 export default function validateNumber(number) {
   const convertNum = parseInt(number, 10);
-  if (Number.isNaN(convertNum)) {
+
+  if (convertNum === false) {
     throw new Error('Допускается ввод только чисел в десятичной системе счисления');
-  }
-  if (convertNum !== number) {
-    throw new Error('Допускается ввод только чисел в десятичной системе счисления, цифры от 0 до 9');
   }
   return convertNum;
 }
