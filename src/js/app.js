@@ -1,8 +1,3 @@
-export default function validateNumber(number) {
-  const convertNum = parseInt(number, 10);
+import validateNumber from './validateNumber';
 
-  if (convertNum === false) {
-    throw new Error('Допускается ввод только чисел в десятичной системе счисления');
-  }
-  return convertNum;
-}
+console.log(validateNumber('12'));
